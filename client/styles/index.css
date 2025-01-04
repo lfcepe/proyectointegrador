@@ -1,0 +1,81 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+}
+
+
+/* Contenedor principal */
+#todosLosRetos {
+    display: grid; /* Cambiamos a grid en lugar de flex */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 15px; /* Espaciado entre las cards */
+    padding: 20px;
+    background: white;
+}
+
+/* Estilos individuales para cada reto */
+#todosLosRetos div {
+    padding: 15px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+#todosLosRetos div:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Títulos */
+#todosLosRetos h2 {
+    font-size: 24px;
+    color: #6200ea;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Párrafos */
+#todosLosRetos p {
+    color: #333;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+#tituloPagina{
+    font-size: 24px;
+    color: #6200ea;
+    margin-bottom: 10px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Estilo base del botón */
+#todosLosRetos a {
+    display: inline-block; /* Permite ajustar ancho y alto */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    color: white; /* Color del texto */
+    background-color: #6200ea; /* Color de fondo */
+    border: 2px solid #6200ea; /* Borde sólido */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Elimina subrayado del enlace */
+    transition: all 0.3s ease; /* Animación suave */
+}
+
+/* Efecto al pasar el cursor */
+#todosLosRetos a:hover {
+    background-color: white; /* Cambia el fondo */
+    color: #6200ea; /* Cambia el color del texto */
+    border: 2px solid #6200ea; /* Mantiene el borde */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
